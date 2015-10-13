@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MTaaS_web</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>signIn</display-name>
+    <servlet-name>signIn</servlet-name>
+    <servlet-class>SignIn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signIn</servlet-name>
+    <url-pattern>/SignIn</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>viewClouds</display-name>
+    <servlet-name>viewClouds</servlet-name>
+    <servlet-class>ViewClouds</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewClouds</servlet-name>
+    <url-pattern>/ViewClouds</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>deleteInstances</display-name>
+    <servlet-name>deleteInstances</servlet-name>
+    <servlet-class>DeleteInstances</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteInstances</servlet-name>
+    <url-pattern>/DeleteInstances</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>manageInstances</display-name>
+    <servlet-name>manageInstances</servlet-name>
+    <servlet-class>ManageInstances</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>manageInstances</servlet-name>
+    <url-pattern>/ManageInstances</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>viewPricing</display-name>
+    <servlet-name>viewPricing</servlet-name>
+    <servlet-class>billing.ViewPricing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewPricing</servlet-name>
+    <url-pattern>/ViewPricing</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>viewBilling</display-name>
+    <servlet-name>viewBilling</servlet-name>
+    <servlet-class>billing.ViewBilling</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewBilling</servlet-name>
+    <url-pattern>/ViewBilling</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>addInstance</display-name>
+    <servlet-name>addInstance</servlet-name>
+    <servlet-class>AddInstance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addInstance</servlet-name>
+    <url-pattern>/AddInstance</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>monitorInstances</display-name>
+    <servlet-name>monitorInstances</servlet-name>
+    <servlet-class>MonitorInstances</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>monitorInstances</servlet-name>
+    <url-pattern>/MonitorInstances</url-pattern>
+  </servlet-mapping>
+  
+   
+  
+ 
+ 
+  
+</web-app>
